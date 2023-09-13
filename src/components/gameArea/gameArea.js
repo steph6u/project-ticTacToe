@@ -84,6 +84,7 @@ function GameArea({ player1, player2, hardReset }) {
 
   useEffect(() => {
     checkWin();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grid]);
 
   const softReset = () => {
