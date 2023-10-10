@@ -4,6 +4,8 @@ import "./gameArea.css";
 //import components
 import GameSquare from "../gameSquare/gameSquare";
 
+
+// this components can be used to represent your game area (up do you if you want to use it)
 function GameArea(props) {
  
 

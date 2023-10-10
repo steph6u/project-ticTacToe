@@ -43,6 +43,5 @@ Make a scoreboard to track how many times each player wins during these sets of 
 
 __Base Reference:__ https://rocket-tictactoe-base.netlify.app/
 
-__More Comfortable Refernce:__ (To be added)
 
 

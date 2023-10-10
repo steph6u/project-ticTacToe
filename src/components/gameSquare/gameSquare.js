@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 function GameSquare(props) {
  
-
+// this component can be used to represent each square of the tic tac toe board
   return (
     <div
     >
