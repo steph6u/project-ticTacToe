@@ -7,10 +7,9 @@ function GameSquare({ id, changeTurn, turn, markSquare, winner, reset }) {
   useEffect(()=>{
     setOwner(null)
   },[reset])
-
+  // this will be used to see if a square has already been taken, and if not set an owner for it. The click will also trigger a turn change (as you can see from the bottom of the function)
   const handleClick = () => {
     if (!owner && !winner) {
-      console.log(`${id} has been clicked!`, turn);
       if (turn) {
         markSquare({ id, owner: 1 });
         setOwner("X");

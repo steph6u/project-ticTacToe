@@ -5,6 +5,7 @@ import "./gameArea.css";
 import GameSquare from "../gameSquare/gameSquare";
 
 function GameArea({ player1, player2, hardReset }) {
+  // we will use state to determin who's turn it is, and ofcourse who OWNS each square
   const [turn, setTurn] = useState(true);
   const [grid, setGrid] = useState([
     { id: 0, owner: null },
@@ -20,9 +21,12 @@ function GameArea({ player1, player2, hardReset }) {
   const [winner, setWinner] = useState(null);
   const [reset, setReset] = useState(true);
 
+  // this function changes the turn after every go
   const changeTurn = () => {
     setTurn(!turn);
   };
+
+  // this function is used to mark the owner of the square, and update the grid state so it can be re-rendered
   const markSquare = ({ id, owner }) => {
     const data = { id, owner };
 
@@ -36,6 +40,8 @@ function GameArea({ player1, player2, hardReset }) {
     setGrid(newGrid);
   };
 
+
+  // this is our win conditions and will be checked after each person has clicked
   const checkWin = () => {
     if (
       (grid[0].owner &&
@@ -87,6 +93,7 @@ function GameArea({ player1, player2, hardReset }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grid]);
 
+  // this is to just reset the game board
   const softReset = () => {
     setGrid([
       { id: 0, owner: null },
@@ -104,6 +111,7 @@ function GameArea({ player1, player2, hardReset }) {
     setReset(!reset);
   };
 
+  // this full reset will be used to also clear the player names (notice how we get the hardReset function from a prop)
   const fullReset = () => {
     softReset();
     hardReset();

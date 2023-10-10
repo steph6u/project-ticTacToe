@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Rocket Academy React Project Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You and your team are tasked with building out the following project in this coming section. In this repository, you will find the starter code necesary to get started with the project.
 
-## Available Scripts
 
-In the project directory, you can run:
+Below are some overview to help guide you with what is expected
 
-### `npm start`
+## React Tic Tac Toe
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You and your team are tasked to build our your interpritation of a basic, working __Tic Tac Toe Game__. To allow 2 players (on the same machine) to play against one another!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Suggested Features
 
-### `npm test`
+We suggest the following features to be incorporated into your app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. The ability for players to input their names for the game to render out to make the experience more personal
+2. for the game to know automatically who's turn it is 
+3. input validation to make sure that an occupied square cannot be taken over
+4. Winning or tie condition checked after each move
+4. The ability to stop the game and offer a game reset once end of game is detected
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Suggested Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Main Page to hold all your components in place
+2. Game area to store winning logic and smaller game pieces
+3. Game square to represent each "box" of your tic tac toe game
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What is provided for you
 
-### `npm run eject`
+**If you have a preferred way to structure your code and start your project you may do so as well**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In here you will find the following provided for you already:
+1. A suggested file structure for you to start your project 
+3. Reference solutions for you to look at commited into different branches
+### More comfortable
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Only proceed with this if you have completed the above and are looking for further challenges!**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make a scoreboard to track how many times each player wins during these sets of rounds!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployed Reference Solutions
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+__Base Reference:__ https://rocket-tictactoe-base.netlify.app/
