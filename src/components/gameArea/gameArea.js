@@ -40,7 +40,6 @@ function GameArea({ player1, player2, hardReset }) {
     setGrid(newGrid);
   };
 
-
   // this is our win conditions and will be checked after each person has clicked
   const checkWin = () => {
     if (
@@ -90,7 +89,7 @@ function GameArea({ player1, player2, hardReset }) {
 
   useEffect(() => {
     checkWin();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grid]);
 
   // this is to just reset the game board

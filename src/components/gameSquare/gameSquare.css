@@ -1,61 +1,61 @@
-.gameSquare{
-    min-width: 30%;
-    min-height: 30%;
-    border-color: navy;
-    border-width: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gameSquare {
+  min-width: 30%;
+  min-height: 30%;
+  border-color: navy;
+  border-width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* div#square0{
     border-right:'solid blue 2px';
 
 } */
 
-.square0{
+.square0 {
   border-right-style: solid;
   border-bottom-style: solid;
 }
 
-.square1{
-    border-right-style: solid;
-    border-left-style: solid;
-    border-bottom-style: solid;
-  }
+.square1 {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+}
 
-  .square2{
-    border-left-style: solid;
-    border-bottom-style: solid;
-  }
+.square2 {
+  border-left-style: solid;
+  border-bottom-style: solid;
+}
 
-  .square3{
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-top-style: solid;
-  }
+.square3 {
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
 
-  .square4{
-    border-style: solid;
-  }
+.square4 {
+  border-style: solid;
+}
 
-  .square5{
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-top-style: solid;
-  }
+.square5 {
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
 
-  .square6{
-    border-right-style: solid;
-    border-top-style: solid;
-  }
+.square6 {
+  border-right-style: solid;
+  border-top-style: solid;
+}
 
-  .square7{
-    border-right-style: solid;
-    border-left-style: solid;
-    border-top-style: solid;
-  }
+.square7 {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-style: solid;
+}
 
-  .square8{
-    border-left-style: solid;
-    border-top-style: solid;
-  }
+.square8 {
+  border-left-style: solid;
+  border-top-style: solid;
+}

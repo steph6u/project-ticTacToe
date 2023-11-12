@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 function GameSquare({ id, changeTurn, turn, markSquare, winner, reset }) {
   const [owner, setOwner] = useState(null);
 
-  useEffect(()=>{
-    setOwner(null)
-  },[reset])
+  useEffect(() => {
+    setOwner(null);
+  }, [reset]);
   // this will be used to see if a square has already been taken, and if not set an owner for it. The click will also trigger a turn change (as you can see from the bottom of the function)
   const handleClick = () => {
     if (!owner && !winner) {

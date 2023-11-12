@@ -4,7 +4,6 @@ import "./game.css";
 // importing components
 import GameArea from "../../components/gameArea/gameArea";
 
-
 // this component combines the entire app together, getting the names, setting the board etc
 function Game() {
   const [player1, setPlayer1] = useState("");
