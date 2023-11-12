@@ -22,12 +22,8 @@ function GameSquare({ id, changeTurn, turn, markSquare, winner, reset }) {
   };
 
   return (
-    <div
-      className={`gameSquare square${id}`}
-      onClick={handleClick}
-      id={`square${id}`}
-    >
-      <p>{owner ? owner : ""}</p>
+    <div>
+      <p>This is your game square component</p>
     </div>
   );
 }
