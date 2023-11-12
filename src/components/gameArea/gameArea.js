@@ -118,7 +118,43 @@ function GameArea({ player1, player2, hardReset }) {
 
   return (
     <div id="gameArea">
-      <GameSquare />
+      <h3>GAME ON!</h3>
+      <br />
+      {!winner ? (
+        <h4>{turn ? player1 : player2}'s turn</h4>
+      ) : winner === 3 ? (
+        <h4>TIE GAME</h4>
+      ) : (
+        <h4>{winner === 1 ? player1 : player2} WINS!</h4>
+      )}
+      <div className="gameBoard">
+        {grid.map((square) => {
+          return (
+            <GameSquare
+              id={square.id}
+              key={square.id}
+              changeTurn={changeTurn}
+              turn={turn}
+              markSquare={markSquare}
+              winner={winner}
+              reset={reset}
+            />
+          );
+        })}
+      </div>
+      <br />
+      {winner ? (
+        <div>
+          <button className="hardReset custom-btn" onClick={softReset}>
+            Play another Round?
+          </button>
+          <button className="softReset custom-btn" onClick={fullReset}>
+            Reset Game
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
