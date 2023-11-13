@@ -28,6 +28,7 @@ jobs:
           retention-days: 30
 
   # Publish Playwright e2e test report to GitHub Pages
+  # Modified from source: https://ysfaran.github.io/blog/2022/09/02/playwright-gh-action-gh-pages/
   publish_report:
     name: Publish HTML Report
     # using always() is not ideal here, because it would also run if the workflow was cancelled
