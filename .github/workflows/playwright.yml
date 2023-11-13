@@ -37,7 +37,7 @@ jobs:
         # - uses: actions/upload-artifact@v3
         if: always()
         with:
-          # name: ${{ env.HTML_REPORT_URL_PATH }}
+          name: ${{ env.HTML_REPORT_URL_PATH }}
           # name: playwright-report
           path: playwright-report/
           retention-days: 30
