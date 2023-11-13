@@ -24,6 +24,10 @@
       "react-app",
       "react-app/jest",
       "plugin:storybook/recommended"
+    ],
+    "ignorePatterns": [
+      "tests/**",
+      "tests-examples/**"
     ]
   },
   "browserslist": {
