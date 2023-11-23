@@ -1,7 +1,7 @@
 name: Playwright Tests
 on:
   push:
-    branches: [main, testing-starter]
+    branches: [main, testing-starter-kai-working]
   pull_request:
     branches: [main]
 jobs:
