@@ -1,6 +1,6 @@
 # Rocket Academy Tic Tac Toe Testing
 
-You and your partner are tasked with testing Rocket Academy's Tic Tac Toe app from Workshop 1. This branch contains Rocket Academy's reference solution for you to write tests for.
+You and your partner are tasked with testing Rocket Academy's Tic Tac Toe app from Workshop 1. This branch contains Rocket Academy's app implementation for you to write tests for.
 
 ### App Features
 
