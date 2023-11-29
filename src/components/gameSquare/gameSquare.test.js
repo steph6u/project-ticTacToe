@@ -6,7 +6,7 @@ describe("When clicked, game square displays correct character, either X or O", 
   test("X", async () => {
     const squareId = 1;
 
-    // Arrange
+    // Given empty game square and X's turn
     const { container } = render(
       <GameSquare
         id={squareId}
@@ -18,25 +18,23 @@ describe("When clicked, game square displays correct character, either X or O", 
       />
     );
 
-    // Verify nothing there
+    // Verify empty square
     expect(screen.queryByText("X")).toBeNull();
 
-    // Act
-    // Click on the div
+    // When we click on the div
     const squareDiv = container.querySelector(`#square${squareId}`);
     await act(() => {
       userEvent.click(squareDiv);
     });
 
-    // Assert
-    // Assert that the X appears
+    // Then the X appears
     expect(screen.getByText("X")).toHaveTextContent("X");
   });
 
   test("O", async () => {
     const squareId = 1;
 
-    // Arrange
+    // Given empty game square and O's turn
     const { container } = render(
       <GameSquare
         id={squareId}
@@ -48,18 +46,16 @@ describe("When clicked, game square displays correct character, either X or O", 
       />
     );
 
-    // Verify nothing there
+    // Verify empty square
     expect(screen.queryByText("O")).toBeNull();
 
-    // Act
-    // Click on the div
+    // When we click on the div
     const squareDiv = container.querySelector(`#square${squareId}`);
     await act(() => {
       userEvent.click(squareDiv);
     });
 
-    // Assert
-    // Assert that the X appears
+    // Then the O appears
     expect(screen.getByText("O")).toHaveTextContent("O");
   });
 });
