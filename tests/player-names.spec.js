@@ -2,14 +2,6 @@
 const { test, expect } = require("@playwright/test");
 
 test.describe("Enter player names", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/");
-  });
-
-  test("Tic Tac Toe title visible", async ({ page }) => {
-    // ...
-  });
-
   test("Enter Player Name", async ({ page }) => {
     await page.goto("/");
 
