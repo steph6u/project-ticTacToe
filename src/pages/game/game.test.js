@@ -14,7 +14,7 @@ describe("Winning conditions", () => {
       "player1NameInputSubmitButton"
     );
 
-    // Input 23
+    // Input name
     fireEvent.change(player1NameInput, { target: { value: "Foo" } });
     // Click submit
     await act(() => {
