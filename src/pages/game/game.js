@@ -110,7 +110,7 @@ function Game() {
           )}
         </div>
       </div>
-      <div id="gameArea">
+      <div id="gameArea" data-testid="gameArea">
         {gameState !== "setup" ? (
           <GameArea player1={player1} player2={player2} hardReset={hardReset} />
         ) : null}
