@@ -117,7 +117,7 @@ function GameArea({ player1, player2, hardReset }) {
   };
 
   return (
-    <div id="gameArea">
+    <div id="gameArea" data-testid="gameArea">
       <h3>GAME ON!</h3>
       <br />
       {!winner ? (
@@ -145,10 +145,10 @@ function GameArea({ player1, player2, hardReset }) {
       <br />
       {winner ? (
         <div>
-          <button className="hardReset custom-btn" onClick={softReset}>
+          <button className="hardReset custom-btn" onClick={softReset} data-testid="continue-btn" id="continue-btn">
             Play another Round?
           </button>
-          <button className="softReset custom-btn" onClick={fullReset}>
+          <button className="softReset custom-btn" onClick={fullReset} data-testid="reset-btn">
             Reset Game
           </button>
         </div>

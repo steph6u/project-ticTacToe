@@ -71,8 +71,9 @@ function Game() {
                 value={player1}
                 placeholder="Input Player 1 name"
                 onChange={(e) => handleChange(e)}
+                data-testid="player1name"
               />
-              <input type="submit" value="READY!" className="readyButton" />
+              <input type="submit" value="READY!" className="readyButton" data-testid="player1btn" />
             </form>
           ) : (
             <h3>{player1.toUpperCase()} READY!</h3>
@@ -92,8 +93,9 @@ function Game() {
                 value={player2}
                 placeholder="Input Player 2 name"
                 onChange={(e) => handleChange(e)}
+                data-testid="player2name"
               />
-              <input type="submit" value="READY!" className="readyButton" />
+              <input type="submit" value="READY!" className="readyButton" data-testid="player2btn" />
             </form>
           ) : (
             <h3>{player2.toUpperCase()} READY!</h3>
